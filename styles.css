@@ -1,0 +1,505 @@
+.container {
+    background:#fff;
+    width:450px;
+    padding:1.5rem;
+    margin:50px auto;
+    margin-top: 150px;
+    border-radius:10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+body {
+    background-color: #adadad;
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+
+input {
+    max-width: 300px;
+    min-width: 300px;
+    height: 50px;
+    color: inherit;
+    padding: 0 0.4em;
+}
+
+input:focus{
+    border-left:solid 1px hsla(240, 73%, 71%, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Kumbh Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background: black;
+    z-index: 1000;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: fixed;
+}
+
+#navbar-logo {
+    color: #0ce48d;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.navbar__menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__links {
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__links:hover {
+    color:#0ce48d;
+    transition: all 0.3s ease;
+}
+
+.navbar__btn {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    background: #0ce48d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #15b856;
+    transition: all 0.3s ease;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+table {
+    margin:auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 500px;
+}
+
+.addTeacher {
+    text-align: center;
+}
+.addTeacherBtn {
+    background: #365e4d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.addTeacherBtn:hover {
+    background: #21ad59;
+    transition: all 0.3s ease;
+}
+
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bodyContent{
+    border-radius: 4px;
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    width: 850px;
+    flex:1;
+    overflow-y:auto;
+}
+
+.addUser label {
+    width: 140px; 
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.addUser input {
+    max-width: 300px;
+    min-width: 300px;
+    height: 50px;
+    color: inherit;
+    padding: 0 0.4em;
+}
+
+.addTeacher input {
+    background: #365e4d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.addTeacher input:hover {
+    background: #21ad59;
+    transition: all 0.3s ease;
+}
+
+.addTeacher button {
+    background: #365e4d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.addTeacher button:hover {
+    background: #21ad59;
+    transition: all 0.3s ease;
+}
+
+.viewUserList {
+    background: #0ce48d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+}
+
+.centerButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+.successMessage {
+    display:flex;
+    justify-content: center;
+    padding-top: 350px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.welcomeMsg {
+    text-align: center;
+}
+
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.attendanceLinks {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px; 
+    text-align: center;
+}
+
+.attendanceLinks:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.attendanceLinks:visited {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.attendanceLinks:active {
+    color: #ff5733;
+    text-decoration: underline;
+}
+
+.homepage-content {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.welcome-message h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.welcome-message p {
+    font-size: 24px;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.dashboard-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 22%;
+}
+
+.dashboard-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.dashboard-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.dashboard-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.dashboard-link:hover {
+    text-decoration: underline;
+}
+
+.add-grade-form {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.add-grade-form h4 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #365e4d;
+}
+
+.add-grade-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.add-grade-form select, 
+.add-grade-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+.add-grade-form input[type="text"]:focus, 
+.add-grade-form select:focus {
+    border-color: #21ad59;
+    outline: none;
+}
+
+.add-grade-form.hidden {
+    display: none;
+}
+
+.addTeacher input[type="submit"] {
+    background-color: #365e4d;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.addTeacher input[type="submit"]:hover {
+    background-color: #21ad59;
+    transition: background-color 0.3s ease;
+}
+
+.success-message {
+    background-color: #d4edda;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    color: #155724;
+    text-align: center;
+}
+
+.success-message a {
+    color: #155724;
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #365e4d;
+}
+
+td input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+td input[type="text"]:focus {
+    border-color: #21ad59;
+    outline: none;
+}
+
+.schedule-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.day-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.class-info {
+    margin-bottom: 15px;
+}
+
+.day-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.course-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.teacher-name {
+    font-size: 14px;
+    color: #555;
+}
+
+.time {
+    font-size: 14px;
+    color: #333;
+}
+
+.homework-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="file"] {
+    background-color: #f1f1f1;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.submit-btn {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
